@@ -1,12 +1,16 @@
-import img from "../../../assets/banner/banner-assist-care.png";
+import img from "../../../assets/about-us/about-us-2.png";
+
+import OurMission from "../OurMission/OurMission";
+import OurValues from "../OurValues/OurValues";
+import OurVision from "../OurVision/OurVision";
 
 const AboutUs = () => {
   return (
-    <div className="relative">
+    <div>
       <img src={img} alt="" />
-      <div className="absolute text-white">
-        <h3 className="text-3xl">Patient Care</h3>
-      </div>
+      <OurMission />
+      <OurValues />
+      <OurVision />
     </div>
   );
 };

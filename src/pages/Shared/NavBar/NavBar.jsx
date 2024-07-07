@@ -7,22 +7,22 @@ const NavBar = () => {
         <NavLink to={"/"}>Home</NavLink>
       </li>
       <li>
-        <Link to={"/aboutUs"}>About</Link>
+        <NavLink to={"/aboutUs"}>About</NavLink>
       </li>
       <li>
-        <Link to={"/service"}>Service</Link>
+        <NavLink to={"/service"}>Service</NavLink>
       </li>
       <li>
-        <Link to={"/nurses"}>Nurses</Link>
+        <NavLink to={"/nurses"}>Nurses</NavLink>
       </li>
       <li>
-        <Link to={"/contact"}>Contact</Link>
+        <NavLink to={"/contact"}>Contact</NavLink>
       </li>
     </>
   );
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-neutral text-neutral-content bg-opacity-70 fixed max-w-screen-xl z-50 ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -51,7 +51,7 @@ const NavBar = () => {
         <Link to={"/"}>
           <img
             width={200}
-            src="/src/assets/logo/nurses-station-navbar-logo.png"
+            src="/src/assets/logo/nurses-station-navbar-logo-2.png"
             alt=""
           />
         </Link>

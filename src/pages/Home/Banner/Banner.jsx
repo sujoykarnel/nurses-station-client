@@ -35,7 +35,7 @@ const Banner = () => {
           <div className="relative ">
             <img src={img1} alt="" />
             <div className=" absolute top-1/3 left-0 mx-14 text-white md:w-1/3 h-2/3 ">
-              <h2 className="text-2xl md:text-6xl font-bold ">Patient Care</h2>
+              <h2 className="text-2xl md:text-6xl font-bold  ">Patient Nursing</h2>
               <p className="mt-5 text-justify">
                 Monitoring vital signs, administering medications, wound care,
                 and assisting with daily activities.
@@ -76,7 +76,7 @@ const Banner = () => {
             <img src={img4} alt="" />
             <div className=" absolute top-1/3 left-0 mx-14 text-white md:w-1/3 h-2/3 ">
               <h2 className=" text-2xl md:text-6xl font-bold ">
-                Preventative Care
+                Preventative Nursing
               </h2>
               <p className="mt-5 text-justify">
                 Administering vaccinations, conducting health screenings, and
@@ -90,7 +90,7 @@ const Banner = () => {
             <img src={img5} alt="" />
             <div className=" absolute top-1/3 left-0 mx-14 text-white md:w-1/3 h-2/3 ">
               <h2 className=" text-2xl md:text-6xl font-bold ">
-                Specialized Care
+                Specialized Nursing
               </h2>
               <p className="mt-5 text-justify">
                 Providing care in areas such as pediatrics, geriatrics,
