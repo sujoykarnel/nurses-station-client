@@ -1,0 +1,119 @@
+[
+    {
+        "name": "Home Health Care",
+        "details": "Provide medical care in patients' homes, including wound care, medication administration, and monitoring of chronic conditions.",
+        "needed_equipment": [
+            "Blood pressure monitor",
+            "Stethoscope",
+            "Thermometer",
+            "Glucometer",
+            "Wound care supplies",
+            "Portable EKG machine",
+            "Medication administration supplies"
+        ]
+    },
+    {
+        "name": "Hospice Care",
+        "details": "Offer end-of-life care, focusing on pain management, emotional support, and comfort for terminally ill patients.",
+        "needed_equipment": [
+            "Pain management medications",
+            "Oxygen supply",
+            "Suction machine",
+            "Incontinence supplies",
+            "Pressure-relieving mattresses",
+            "Stethoscope"
+        ]
+    },
+    {
+        "name": "Pediatric Nursing",
+        "details": "Provide care for infants, children, and adolescents in various settings such as hospitals, clinics, and homes.",
+        "needed_equipment": [
+            "Pediatric stethoscope",
+            "Infant scales",
+            "Thermometer",
+            "Nebulizer",
+            "Pediatric blood pressure cuff",
+            "Pulse oximeter"
+        ]
+    },
+    {
+        "name": "Geriatric Nursing",
+        "details": "Care for elderly patients, managing chronic diseases, promoting mobility, and preventing falls.",
+        "needed_equipment": [
+            "Walker",
+            "Wheelchair",
+            "Blood pressure monitor",
+            "Stethoscope",
+            "Fall prevention equipment",
+            "Medication management system"
+        ]
+    },
+    {
+        "name": "Surgical Nursing",
+        "details": "Assist in preoperative, intraoperative, and postoperative care for surgical patients.",
+        "needed_equipment": [
+            "Surgical instruments",
+            "Sterilization equipment",
+            "Anesthesia supplies",
+            "Wound care supplies",
+            "Vital signs monitoring equipment"
+        ]
+    },
+    {
+        "name": "Community Health Nursing",
+        "details": "Focus on improving the health of communities through education, preventive care, and health promotion activities.",
+        "needed_equipment": [
+            "Educational materials",
+            "Blood pressure monitor",
+            "Glucometer",
+            "Stethoscope",
+            "Immunization supplies",
+            "Health screening tools"
+        ]
+    },
+    {
+        "name": "School Nursing",
+        "details": "Provide healthcare services in schools, managing student health, administering medications, and promoting healthy lifestyles.",
+        "needed_equipment": [
+            "First aid supplies",
+            "Thermometer",
+            "Medication storage and administration supplies",
+            "Vision and hearing screening tools",
+            "Health education materials"
+        ]
+    },
+    {
+        "name": "Emergency Room Nursing",
+        "details": "Deliver urgent care to patients in emergency situations, stabilizing conditions and providing life-saving treatments.",
+        "needed_equipment": [
+            "Defibrillator",
+            "Trauma supplies",
+            "Intubation equipment",
+            "EKG machine",
+            "IV supplies",
+            "Emergency medications"
+        ]
+    },
+    {
+        "name": "Occupational Health Nursing",
+        "details": "Focus on health and safety in the workplace, preventing injuries, and managing occupational health issues.",
+        "needed_equipment": [
+            "First aid supplies",
+            "Injury prevention tools",
+            "Ergonomic assessment tools",
+            "Health screening equipment",
+            "Educational materials"
+        ]
+    },
+    {
+        "name": "Mental Health Nursing",
+        "details": "Provide care for patients with mental health conditions, including therapy, medication management, and crisis intervention.",
+        "needed_equipment": [
+            "Counseling materials",
+            "Medication administration supplies",
+            "Vital signs monitoring equipment",
+            "Patient assessment tools",
+            "Educational resources"
+        ]
+    }
+]

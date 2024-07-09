@@ -1,8 +1,9 @@
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import missionImg from "../../../assets/about-us/mission.png";
+import { useEffect } from "react";
 
 const OurMission = () => {
-  const missions = [{}];
+
 
   return (
     <div>

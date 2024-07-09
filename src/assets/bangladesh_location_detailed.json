@@ -1,0 +1,105 @@
+{
+    "country": "Bangladesh",
+    "divisions": [
+        {
+            "name": "Dhaka",
+            "districts": [
+                {
+                    "name": "Dhaka",
+                    "upazilas": [
+                        {
+                            "name": "Dhamrai",
+                            "thanas": [
+                                {
+                                    "name": "Dhamrai",
+                                    "unions": [
+                                        {
+                                            "name": "Kamalapur",
+                                            "villages": [
+                                                "Village 1",
+                                                "Village 2"
+                                            ]
+                                        },
+                                        {
+                                            "name": "Sutipara",
+                                            "villages": [
+                                                "Village 3",
+                                                "Village 4"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Keraniganj",
+                            "thanas": [
+                                {
+                                    "name": "Keraniganj",
+                                    "unions": [
+                                        {
+                                            "name": "Kalatia",
+                                            "villages": [
+                                                "Village 5",
+                                                "Village 6"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Gazipur",
+                    "upazilas": [
+                        {
+                            "name": "Sreepur",
+                            "thanas": [
+                                {
+                                    "name": "Sreepur",
+                                    "unions": [
+                                        {
+                                            "name": "Gosinga",
+                                            "villages": [
+                                                "Village 7",
+                                                "Village 8"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Chittagong",
+            "districts": [
+                {
+                    "name": "Chittagong",
+                    "upazilas": [
+                        {
+                            "name": "Patiya",
+                            "thanas": [
+                                {
+                                    "name": "Patiya",
+                                    "unions": [
+                                        {
+                                            "name": "Haidgaon",
+                                            "villages": [
+                                                "Village 9",
+                                                "Village 10"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
