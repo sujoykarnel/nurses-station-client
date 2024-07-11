@@ -46,7 +46,7 @@ const Login = () => {
               required
               {...register("password")}
             />
-            
+
             <input
               className="btn btn-primary w-full max-w-xs"
               type="submit"
@@ -54,13 +54,15 @@ const Login = () => {
             />
             <p>
               Are you new?{" "}
-              <span className="text-blue-500">
-                <Link to="/signUp">Click Here.</Link>
-              </span>
+              <span className="text-blue-500 hover:underline">
+                <Link to="/signUp">SignUp </Link>
+              </span>{" "}
+              here.
             </p>
-            <div className="divider">OR</div>
-            <SocialLogin />
           </form>
+
+          <div className="divider">OR</div>
+          <SocialLogin />
         </div>
       </div>
     </>
