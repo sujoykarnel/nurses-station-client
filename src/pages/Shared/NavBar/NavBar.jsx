@@ -1,8 +1,21 @@
 import { Link, NavLink } from "react-router-dom";
-import { FaSignInAlt } from "react-icons/fa";
+import { FaSignInAlt, FaUser } from "react-icons/fa";
+import useAuth from "../../../hooks/useAuth";
 
 const NavBar = () => {
-  const user = 0;
+  const { user, logOutUser } = useAuth();
+
+  console.log(user);
+
+  const handleLogOut = (e) => {
+    e.preventDefault();
+    logOutUser()
+      .then(() => {})
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   const navbarMenu = (
     <>
       <li>
@@ -75,12 +88,15 @@ const NavBar = () => {
               role="button"
               className="btn btn-ghost btn-circle avatar"
             >
-              <div className="w-10 rounded-full">
-                <img
-                  alt="Tailwind CSS Navbar component"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                />
-              </div>
+              {user?.image ? (
+                <div className="w-10 rounded-full">
+                  <img alt="Tailwind CSS Navbar component" src={<FaUser />} />
+                </div>
+              ) : (
+                <button className="btn btn-circle btn-outline">
+                  <FaUser />
+                </button>
+              )}
             </div>
             <ul
               tabIndex={0}
@@ -96,7 +112,7 @@ const NavBar = () => {
                 <a>Settings</a>
               </li>
               <li>
-                <a>Logout</a>
+                <button onClick={handleLogOut}>Logout</button>
               </li>
             </ul>
           </div>

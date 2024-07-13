@@ -6,7 +6,6 @@ const useService = () => {
     queryKey: ["service"],
     queryFn: async () => {
       const res = await axios.get("nursing_services.json");
-      console.log(res);
       return res.data;
     },
   });

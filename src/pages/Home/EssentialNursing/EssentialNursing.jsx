@@ -7,7 +7,7 @@ const EssentialNursing = () => {
   const essentialService = services.filter(
     (service) => service.type === "essential"
   );
-  console.log(essentialService);
+
 
   return (
     <div className="flex justify-center">

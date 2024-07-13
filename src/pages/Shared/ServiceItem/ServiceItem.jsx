@@ -2,7 +2,7 @@ import servicesImg from "../../../assets/services/services.png";
 
 const ServiceItem = ({ item }) => {
   const { name, details, needed_equipment, image } = item;
-  console.log(item);
+
   return (
     <>
       <div className="card bg-base-100 w-96 shadow-xl">

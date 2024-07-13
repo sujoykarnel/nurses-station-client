@@ -6,12 +6,15 @@ import { register } from "swiper/element";
 import SocialLogin from "../../components/SocialLogin/SocialLogin";
 import { Helmet } from "react-helmet-async";
 import logoImg from "../../assets/logo/nurses-station-logo-2.png";
+import useAuth from "../../hooks/useAuth";
 
 const Login = () => {
   const { register, handleSubmit, reset } = useForm();
+  const { signInUser } = useAuth();
 
   const onSubmit = (data) => {
-    console.log(data);
+    const { email, password } = data;
+    signInUser(email, password).then((result) => [console.log(result)]);
     reset();
   };
 

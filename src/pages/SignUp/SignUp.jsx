@@ -4,14 +4,17 @@ import SocialLogin from "../../components/SocialLogin/SocialLogin";
 import { Helmet } from "react-helmet-async";
 import logoImg from "../../assets/logo/nurses-station-logo-2.png";
 import useNotify from "../../hooks/useNotify";
-import { Warning } from "postcss";
+import useAuth from "../../hooks/useAuth";
 
 const SignUp = () => {
   const { register, handleSubmit, reset } = useForm();
+  const { createUser } = useAuth();
 
   const { notify } = useNotify();
   const onSubmit = (data) => {
     const { name, email, password, rePassword } = data;
+
+    // verify re type password
     if (password !== rePassword) {
       notify({
         title: "Waring",
@@ -20,8 +23,13 @@ const SignUp = () => {
       });
       return;
     }
-    console.log(data);
-    reset();
+
+    // create new user
+    createUser(email, password).then((result) => {
+      if (result.user) {
+        // @todo:  Update user Name
+      }
+    });
   };
 
   return (
@@ -60,6 +68,7 @@ const SignUp = () => {
                 type="password"
                 placeholder="Password"
                 name="password"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
                 required
                 {...register("password")}
               />
