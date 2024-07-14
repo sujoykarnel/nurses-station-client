@@ -8,7 +8,7 @@ const OurVision = () => {
       <SectionTitle heading={"Our Vision"} />
       <div className="md:flex gap-4 py-4 px-16">
         <div className="md:w-1/2 flex items-center justify-center">
-          <img className="rounded-full w-1/2" src={visionImg} alt="" />
+          <img className="rounded-full border-4 border-black w-1/2" src={visionImg} alt="" />
         </div>
         <div className="md:w-1/2 flex flex-col items-center justify-center text-justify">
           <p>

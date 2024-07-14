@@ -1,21 +1,35 @@
-import React from "react";
 import { useForm } from "react-hook-form";
-import { FaGoogle } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { register } from "swiper/element";
+import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "../../components/SocialLogin/SocialLogin";
 import { Helmet } from "react-helmet-async";
 import logoImg from "../../assets/logo/nurses-station-logo-2.png";
 import useAuth from "../../hooks/useAuth";
+import useNotify from "../../hooks/useNotify";
 
 const Login = () => {
   const { register, handleSubmit, reset } = useForm();
   const { signInUser } = useAuth();
 
+  const navigate = useNavigate();
+  const { notify } = useNotify();
+
   const onSubmit = (data) => {
     const { email, password } = data;
-    signInUser(email, password).then((result) => [console.log(result)]);
-    reset();
+    signInUser(email, password)
+      .then((result) => {
+        console.log(result);
+        reset();
+        navigate("/");
+      })
+      .catch((err) => {
+        console.log(err);
+        notify({
+          title: "Login Error!",
+          message: "Email or Password not valid!",
+          type: "danger",
+        });
+      });
+    
   };
 
   return (

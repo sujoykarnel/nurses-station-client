@@ -7,7 +7,7 @@ const OurValues = () => {
       <SectionTitle heading={"Our Values"} />
       <div className="md:flex md:flex-row-reverse gap-4 py-4 px-16">
         <div className="md:w-1/2 flex items-center justify-center">
-          <img className="rounded-full w-1/2 " src={valuesImg} alt="" />
+          <img className="rounded-full border-4 border-black w-1/2 " src={valuesImg} alt="" />
         </div>
 
         <div className="md:w-1/2 flex flex-col items-center justify-center text-justify">

@@ -34,8 +34,10 @@ const Banner = () => {
         <SwiperSlide>
           <div className="relative ">
             <img src={img1} alt="" />
-            <div className=" absolute top-1/3 left-0 mx-14 text-white md:w-1/3 h-2/3 ">
-              <h2 className="text-2xl md:text-6xl font-bold  ">Patient Nursing</h2>
+            <div className=" absolute top-1/3 left-0 mx-14 text-blue-600 md:w-1/3 h-2/3 ">
+              <h2 className="text-2xl md:text-6xl font-bold  ">
+                Patient Nursing
+              </h2>
               <p className="mt-5 text-justify">
                 Monitoring vital signs, administering medications, wound care,
                 and assisting with daily activities.
@@ -46,7 +48,7 @@ const Banner = () => {
         <SwiperSlide>
           <div className="relative ">
             <img src={img2} alt="" />
-            <div className=" absolute top-1/3 left-0 mx-14 text-white md:w-1/3 h-2/3 ">
+            <div className=" absolute top-1/3 left-0 mx-14 text-blue-600 md:w-1/3 h-2/3 ">
               <h2 className="text-2xl md:text-6xl font-bold ">
                 Health Education
               </h2>
@@ -60,7 +62,7 @@ const Banner = () => {
         <SwiperSlide>
           <div className="relative ">
             <img src={img3} alt="" />
-            <div className=" absolute top-1/3 left-0 mx-14 text-white md:w-1/3 h-2/3 ">
+            <div className=" absolute top-1/3 left-0 mx-14 text-blue-600 md:w-1/3 h-2/3 ">
               <h2 className="text-2xl md:text-6xl font-bold ">
                 Coordination of Care
               </h2>
@@ -74,7 +76,7 @@ const Banner = () => {
         <SwiperSlide>
           <div className="relative ">
             <img src={img4} alt="" />
-            <div className=" absolute top-1/3 left-0 mx-14 text-white md:w-1/3 h-2/3 ">
+            <div className=" absolute top-1/3 left-0 mx-14 text-blue-600 md:w-1/3 h-2/3 ">
               <h2 className=" text-2xl md:text-6xl font-bold ">
                 Preventative Nursing
               </h2>
@@ -88,7 +90,7 @@ const Banner = () => {
         <SwiperSlide>
           <div className="relative ">
             <img src={img5} alt="" />
-            <div className=" absolute top-1/3 left-0 mx-14 text-white md:w-1/3 h-2/3 ">
+            <div className=" absolute top-1/3 left-0 mx-14 text-blue-600 md:w-1/3 h-2/3 ">
               <h2 className=" text-2xl md:text-6xl font-bold ">
                 Specialized Nursing
               </h2>

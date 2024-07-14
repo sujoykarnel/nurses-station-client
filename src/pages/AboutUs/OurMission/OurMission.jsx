@@ -1,6 +1,6 @@
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import missionImg from "../../../assets/about-us/mission.png";
-import { useEffect } from "react";
+
 
 const OurMission = () => {
 
@@ -10,7 +10,7 @@ const OurMission = () => {
       <SectionTitle heading={"Our Mission"} />
       <div className="md:flex gap-4 py-4 px-16">
         <div className="md:w-1/2 flex items-center justify-center">
-          <img className="rounded-full w-1/2 " src={missionImg} alt="" />
+          <img className="rounded-full border-4 border-black w-1/2 " src={missionImg} alt="" />
         </div>
         <div className="md:w-1/2 flex flex-col items-center justify-center">
           <h2 className="text-2xl text-center font-bold text-green-700">

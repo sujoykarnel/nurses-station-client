@@ -1,7 +1,7 @@
 import servicesImg from "../../../assets/services/services.png";
 
 const ServiceItem = ({ item }) => {
-  const { name, details, needed_equipment, image } = item;
+  const { name, details, image } = item;
 
   return (
     <>

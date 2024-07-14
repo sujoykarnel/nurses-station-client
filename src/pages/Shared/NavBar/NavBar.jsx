@@ -19,19 +19,29 @@ const NavBar = () => {
   const navbarMenu = (
     <>
       <li>
-        <NavLink to={"/"}>Home</NavLink>
+        <NavLink className=" hover:bg-black" to={"/"}>
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink to={"/aboutUs"}>About</NavLink>
+        <NavLink className=" hover:bg-black" to={"/aboutUs"}>
+          About
+        </NavLink>
       </li>
       <li>
-        <NavLink to={"/services"}>Services</NavLink>
+        <NavLink className=" hover:bg-black" to={"/services"}>
+          Services
+        </NavLink>
       </li>
       <li>
-        <NavLink to={"/nurses"}>Nurses</NavLink>
+        <NavLink className=" hover:bg-black" to={"/nurses"}>
+          Nurses
+        </NavLink>
       </li>
       <li>
-        <NavLink to={"/contact"}>Contact</NavLink>
+        <NavLink className=" hover:bg-black" to={"/contact"}>
+          Contact
+        </NavLink>
       </li>
     </>
   );
@@ -93,26 +103,28 @@ const NavBar = () => {
                   <img alt="Tailwind CSS Navbar component" src={<FaUser />} />
                 </div>
               ) : (
-                <button className="btn btn-circle btn-outline">
-                  <FaUser />
+                <button className="btn btn-circle">
+                  <FaUser className="text-2xl" />
                 </button>
               )}
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-neutral text-neutral-content bg-opacity-70 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a className="justify-between">
+                <a className="justify-between hover:bg-black">
                   Profile
                   <span className="badge">New</span>
                 </a>
               </li>
               <li>
-                <a>Settings</a>
+                <a className=" hover:bg-black">Settings</a>
               </li>
               <li>
-                <button onClick={handleLogOut}>Logout</button>
+                <button className=" hover:bg-black" onClick={handleLogOut}>
+                  Logout
+                </button>
               </li>
             </ul>
           </div>
