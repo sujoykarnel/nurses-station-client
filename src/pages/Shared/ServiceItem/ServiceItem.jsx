@@ -13,7 +13,7 @@ const ServiceItem = ({ item }) => {
           <h2 className="card-title font-bold">{name}</h2>
           <p>{details}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Show Nurses</button>
+            <button className="btn btn-success">Show Nurses</button>
           </div>
         </div>
       </div>

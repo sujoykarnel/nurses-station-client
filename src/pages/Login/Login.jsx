@@ -4,32 +4,29 @@ import SocialLogin from "../../components/SocialLogin/SocialLogin";
 import { Helmet } from "react-helmet-async";
 import logoImg from "../../assets/logo/nurses-station-logo-2.png";
 import useAuth from "../../hooks/useAuth";
-import useNotify from "../../hooks/useNotify";
+import useSweetAlert from "../../hooks/useSweetAlert";
 
 const Login = () => {
   const { register, handleSubmit, reset } = useForm();
   const { signInUser } = useAuth();
 
   const navigate = useNavigate();
-  const { notify } = useNotify();
+
+  const { successAlert, errorAlert } = useSweetAlert();
 
   const onSubmit = (data) => {
     const { email, password } = data;
     signInUser(email, password)
       .then((result) => {
         console.log(result);
+        successAlert('Login Successful!');
         reset();
         navigate("/");
       })
       .catch((err) => {
         console.log(err);
-        notify({
-          title: "Login Error!",
-          message: "Email or Password not valid!",
-          type: "danger",
-        });
+        errorAlert("Login Failed!", "User or Password not valid.");
       });
-    
   };
 
   return (
@@ -72,7 +69,7 @@ const Login = () => {
             <p>
               Are you new?{" "}
               <span className="text-blue-500 hover:underline">
-                <Link to="/signUp">SignUp </Link>
+                <Link to="/signUp">Sign Up </Link>
               </span>{" "}
               here.
             </p>

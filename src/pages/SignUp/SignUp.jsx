@@ -1,26 +1,23 @@
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "../../components/SocialLogin/SocialLogin";
 import { Helmet } from "react-helmet-async";
 import logoImg from "../../assets/logo/nurses-station-logo-2.png";
-import useNotify from "../../hooks/useNotify";
+
 import useAuth from "../../hooks/useAuth";
+import useSweetAlert from "../../hooks/useSweetAlert";
 
 const SignUp = () => {
   const { register, handleSubmit, reset } = useForm();
   const { createUser } = useAuth();
+  const { successAlert } = useSweetAlert();
+  const navigate = useNavigate();
 
-  const { notify } = useNotify();
   const onSubmit = (data) => {
-    const { name, email, password, rePassword } = data;
+    const { email, password, rePassword } = data;
 
     // verify re type password
     if (password !== rePassword) {
-      notify({
-        title: "Waring",
-        message: "Password not matched!",
-        type: "warning",
-      });
       return;
     }
 
@@ -28,6 +25,9 @@ const SignUp = () => {
     createUser(email, password).then((result) => {
       if (result.user) {
         // @todo:  Update user Name
+        successAlert("Sign Up Successful!");
+        reset();
+        navigate("/");
       }
     });
   };

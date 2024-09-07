@@ -34,11 +34,11 @@ const Banner = () => {
         <SwiperSlide>
           <div className="relative ">
             <img src={img1} alt="" />
-            <div className=" absolute top-1/3 left-0 mx-14 text-blue-600 md:w-1/3 h-2/3 ">
-              <h2 className="text-2xl md:text-6xl font-bold  ">
+            <div className=" absolute top-1/3 left-0 mx-14  md:w-1/3 h-2/3 ">
+              <h2 className="text-2xl md:text-6xl font-bold text-orange-400 ">
                 Patient Nursing
               </h2>
-              <p className="mt-5 text-justify">
+              <p className="mt-5 font-bold text-justify">
                 Monitoring vital signs, administering medications, wound care,
                 and assisting with daily activities.
               </p>
@@ -48,11 +48,11 @@ const Banner = () => {
         <SwiperSlide>
           <div className="relative ">
             <img src={img2} alt="" />
-            <div className=" absolute top-1/3 left-0 mx-14 text-blue-600 md:w-1/3 h-2/3 ">
-              <h2 className="text-2xl md:text-6xl font-bold ">
+            <div className=" absolute top-1/3 left-0 mx-14 md:w-1/3 h-2/3 ">
+              <h2 className="text-2xl md:text-6xl font-bold text-orange-400">
                 Health Education
               </h2>
-              <p className="mt-5 text-justify">
+              <p className="mt-5 font-bold text-justify">
                 Teaching patients about managing chronic conditions,
                 post-operative care, and healthy lifestyle choices.
               </p>
@@ -62,11 +62,11 @@ const Banner = () => {
         <SwiperSlide>
           <div className="relative ">
             <img src={img3} alt="" />
-            <div className=" absolute top-1/3 left-0 mx-14 text-blue-600 md:w-1/3 h-2/3 ">
-              <h2 className="text-2xl md:text-6xl font-bold ">
+            <div className=" absolute top-1/3 left-0 mx-14 md:w-1/3 h-2/3 ">
+              <h2 className="text-2xl md:text-6xl font-bold text-orange-400 ">
                 Coordination of Care
               </h2>
-              <p className="mt-5 text-justify">
+              <p className="mt-5 font-bold text-justify">
                 Working with other healthcare professionals to develop and
                 implement patient care plans.
               </p>
@@ -76,11 +76,11 @@ const Banner = () => {
         <SwiperSlide>
           <div className="relative ">
             <img src={img4} alt="" />
-            <div className=" absolute top-1/3 left-0 mx-14 text-blue-600 md:w-1/3 h-2/3 ">
-              <h2 className=" text-2xl md:text-6xl font-bold ">
+            <div className=" absolute top-1/3 left-0 mx-14 md:w-1/3 h-2/3 ">
+              <h2 className=" text-2xl md:text-6xl font-bold text-orange-400">
                 Preventative Nursing
               </h2>
-              <p className="mt-5 text-justify">
+              <p className="mt-5 font-bold text-justify">
                 Administering vaccinations, conducting health screenings, and
                 providing counseling on disease prevention.
               </p>
@@ -90,11 +90,11 @@ const Banner = () => {
         <SwiperSlide>
           <div className="relative ">
             <img src={img5} alt="" />
-            <div className=" absolute top-1/3 left-0 mx-14 text-blue-600 md:w-1/3 h-2/3 ">
-              <h2 className=" text-2xl md:text-6xl font-bold ">
+            <div className=" absolute top-1/3 left-0 mx-14 md:w-1/3 h-2/3 ">
+              <h2 className=" text-2xl md:text-6xl font-bold text-orange-400">
                 Specialized Nursing
               </h2>
-              <p className="mt-5 text-justify">
+              <p className="mt-5 font-bold text-justify">
                 Providing care in areas such as pediatrics, geriatrics,
                 oncology, critical care, and more.
               </p>
