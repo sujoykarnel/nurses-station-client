@@ -6,7 +6,7 @@ const OurVision = () => {
   return (
     <div>
       <SectionTitle heading={"Our Vision"} />
-      <div className="md:flex gap-4 py-4 px-16">
+      <div className="md:flex gap-4 pt-4 px-16">
         <div className="md:w-1/2 flex items-center justify-center">
           <img className="rounded-full border-4 border-black w-1/2" src={visionImg} alt="" />
         </div>

@@ -2,16 +2,16 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
 const useUpazilla = (district) => {
-  const { data: upazillas = [], refetch } = useQuery({
+  const { refetch, data: upazillas = [] } = useQuery({
     queryKey: ["upazilla"],
     queryFn: async () => {
       const res = await axios.get(
-        `https://bdapis.com/api/v1.2/district/git${district}`
+        `https://bdapis.com/api/v1.2/district/${district}`
       );
-      console.log(res);
       return res.data.data.upazillas;
     },
   });
+  console.log(district, upazillas);
   return { upazillas, refetch };
 };
 

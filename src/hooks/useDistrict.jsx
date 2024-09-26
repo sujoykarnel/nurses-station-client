@@ -6,7 +6,7 @@ const useDistrict = () => {
     queryKey: ["district"],
     queryFn: async () => {
       const res = await axios.get("https://bdapis.com/api/v1.2/districts");
-      return res.data.data;
+      return res.data.data.sort();
     },
   });
   return { districts, refetch };

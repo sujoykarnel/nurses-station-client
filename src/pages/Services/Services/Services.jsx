@@ -14,7 +14,7 @@ const Services = () => {
       <div>
         <SectionTitle heading={"Our Services"} />
         <div className="flex justify-center">
-          <div className="grid md:grid-cols-3 gap-4 pb-4 ">
+          <div className="grid md:grid-cols-3 gap-4 ">
             {services?.map((service, index) => (
               <ServiceItem key={index} item={service} />
             ))}
